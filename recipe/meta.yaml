@@ -44,6 +44,10 @@ requirements:
     - passlib >=1.7.4,<1.8.0
     - hurry.filesize
     - psutil >=5.8.0,<5.9.0
+    # needed to pass pip check
+    - ecdsa <0.15.0
+    - pyasn1 ==0.4.8
+    - rsa ==4.8
     
 test:
   imports:
