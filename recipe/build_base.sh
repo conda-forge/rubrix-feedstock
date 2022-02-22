@@ -1,6 +1,6 @@
 #!/bin/bash
 
 ${PYTHON} -m pip install . -vv \
-    --no-deps \
-    --no-index \
-    --ignore-installed \
+    # --no-deps \
+    # --no-index \
+    # --ignore-installed \
