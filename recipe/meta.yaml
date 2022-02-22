@@ -49,7 +49,7 @@ outputs:
     build:
       noarch: python
     # script: build_base.sh
-    script: {{ PYTHON }} -m pip install . -vv --no-deps
+    script: {{ environ.get("PYTHON") }} -m pip install . -vv --no-deps
     requirements:
       host:
         - pip
