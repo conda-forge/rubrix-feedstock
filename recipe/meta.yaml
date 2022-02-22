@@ -130,8 +130,8 @@ outputs:
         - uvicorn-standard >0.15.0,<0.18.0
     test:
       imports:
-        - rubrix
-        - rubrix.client
+        # - rubrix
+        # - rubrix.client
         - rubrix.server.server
       # commands:
       #   - pip check
