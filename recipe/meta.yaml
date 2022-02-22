@@ -20,10 +20,10 @@
 #  - setting "use_all_subpackages = False"
 #  - and all other subpackage-switches to "True".
 
-{% set use_all_subpackages = False %}
+{% set use_all_subpackages = True %}
 
 {% set use_client_packages = True %}
-{% set use_server_packages = False %}
+{% set use_server_packages = True %}
 
 #######################################################
 
