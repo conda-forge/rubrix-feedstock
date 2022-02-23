@@ -22,7 +22,6 @@
 
 {% set use_all_subpackages = False %}
 
-{% set use_client_packages = False %}
 {% set use_server_packages = True %}
 
 #######################################################
@@ -70,33 +69,6 @@ outputs:
         - pip check
       requires:
         - pip
-
-
-  ### client_packages
-  {% if use_client_packages is defined %}
-  {% if use_client_packages or use_all_subpackages %}
-  {% with subpackage_id = "client" %}
-  - name: {{ name|lower }}-{{ subpackage_id }}
-    build:
-      noarch: generic
-      string: {{ build_num }}_{{ subpackage_id }}_extra
-    requirements:
-      run:
-        # RECIPE: 
-        # "client": base_packages + None
-        - {{ name|lower }} {{ version }}
-    test:
-      imports:
-        - rubrix
-        - rubrix.client
-      commands:
-        - pip check
-      requires:
-        - pip
-  {% endwith %}
-  {% endif %}
-  {% endif %}
-
 
   ### server_packages
   {% if use_server_packages is defined %}
