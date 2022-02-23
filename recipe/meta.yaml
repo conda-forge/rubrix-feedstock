@@ -20,9 +20,9 @@
 #  - setting "use_all_subpackages = False"
 #  - and all other subpackage-switches to "True".
 
-{% set use_all_subpackages = True %}
+{% set use_all_subpackages = False %}
 
-{% set use_client_packages = True %}
+{% set use_client_packages = False %}
 {% set use_server_packages = True %}
 
 #######################################################
@@ -126,6 +126,10 @@ outputs:
         - scikit-learn >=0.24.2
         - stopwordsiso >=0.6.1,<0.7.0
         - uvicorn-standard >0.15.0,<0.18.0
+        # necessary to pass "pip check"
+        - ecdsa <0.15.0
+        - pyasn1 ==0.4.8
+        - rsa ==4.8
     test:
       imports:
         - rubrix
@@ -133,10 +137,10 @@ outputs:
         - rubrix.server.server
       ## Drop pip-check to avoid 
       ## build failure
-      # commands:
-      #   - pip check
-      # requires:
-      #   - pip
+      commands:
+        - pip check
+      requires:
+        - pip
   {% endwith %}
   {% endif %}
   {% endif %}
