@@ -135,8 +135,6 @@ outputs:
         - rubrix
         - rubrix.client
         - rubrix.server.server
-      ## Drop pip-check to avoid 
-      ## build failure
       commands:
         - pip check
       requires:
