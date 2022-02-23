@@ -64,7 +64,7 @@ Current release info
 | Name | Downloads | Version | Platforms |
 | --- | --- | --- | --- |
 | [![Conda Recipe](https://img.shields.io/badge/recipe-rubrix-green.svg)](https://anaconda.org/conda-forge/rubrix) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/rubrix.svg)](https://anaconda.org/conda-forge/rubrix) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/rubrix.svg)](https://anaconda.org/conda-forge/rubrix) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/rubrix.svg)](https://anaconda.org/conda-forge/rubrix) |
-| [![Conda Recipe](https://img.shields.io/badge/recipe-rubrix--client-green.svg)](https://anaconda.org/conda-forge/rubrix-client) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/rubrix-client.svg)](https://anaconda.org/conda-forge/rubrix-client) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/rubrix-client.svg)](https://anaconda.org/conda-forge/rubrix-client) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/rubrix-client.svg)](https://anaconda.org/conda-forge/rubrix-client) |
+| [![Conda Recipe](https://img.shields.io/badge/recipe-rubrix--server-green.svg)](https://anaconda.org/conda-forge/rubrix-server) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/rubrix-server.svg)](https://anaconda.org/conda-forge/rubrix-server) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/rubrix-server.svg)](https://anaconda.org/conda-forge/rubrix-server) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/rubrix-server.svg)](https://anaconda.org/conda-forge/rubrix-server) |
 
 Installing rubrix
 =================
@@ -76,10 +76,10 @@ conda config --add channels conda-forge
 conda config --set channel_priority strict
 ```
 
-Once the `conda-forge` channel has been enabled, `rubrix, rubrix-client` can be installed with:
+Once the `conda-forge` channel has been enabled, `rubrix, rubrix-server` can be installed with:
 
 ```
-conda install rubrix rubrix-client
+conda install rubrix rubrix-server
 ```
 
 It is possible to list all of the versions of `rubrix` available on your platform with:
