@@ -34,7 +34,7 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/rubrix-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/rubrix-{{ version }}.tar.gz
   sha256: 2f53c6d3d6b5481faf40e4c9bdd71c092e42c6b2214978a5c623f82e761f52a6
 
 build:
@@ -49,10 +49,10 @@ outputs:
     requirements:
       host:
         - pip
-        - python >=3.7
+        - python {{ python_min }}
         - setuptools-scm
       run:
-        - python >=3.7
+        - python >={{ python_min }}
         # base_packages
         - httpx >=0.15.0,<0.16.0
         - numpy
@@ -71,6 +71,7 @@ outputs:
         - pip
 
   ### server_packages
+        - python {{ python_min }}
   {% if use_server_packages is defined %}
   {% if use_server_packages or use_all_subpackages %}
   {% with subpackage_id = "server" %}

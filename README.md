@@ -1,11 +1,105 @@
+About rubrix-feedstock
+======================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/rubrix-feedstock/blob/main/LICENSE.txt)
+
+
 About rubrix
-============
+------------
 
 Home: https://recogn.ai
 
 Package license: Apache-2.0
 
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/rubrix-feedstock/blob/main/LICENSE.txt)
+Summary: Open-source tool for exploring, labeling, and monitoring data for NLP projects.
+
+Development: https://github.com/recognai/rubrix
+
+Documentation: https://rubrix.readthedocs.io/en/stable/
+
+Rubrix is a **production-ready Python framework for exploring, annotating, and 
+managing data** in NLP projects.
+
+Key features:
+
+  - **Open**: Rubrix is free, open-source, and 100% compatible with major NLP 
+    libraries (Hugging Face transformers, spaCy, Stanford Stanza, Flair, etc.). 
+    In fact, you can use and combine your preferred libraries without implementing 
+    any specific interface.
+
+  - **End-to-end**: Most annotation tools treat data collection as a one-off 
+    activity at the beginning of each project. In real-world projects, data 
+    collection is a key activity of the iterative process of ML model development. 
+    Once a model goes into production, you want to monitor and analyze its 
+    predictions, and collect more data to improve your model over time. Rubrix 
+    is designed to close this gap, enabling you to iterate as much as you need.
+
+  - **User and Developer Experience**: The key to sustainable NLP solutions is to 
+    make it easier for everyone to contribute to projects. Domain experts should 
+    feel comfortable interpreting and annotating data. Data scientists should feel 
+    free to experiment and iterate. Engineers should feel in control of data 
+    pipelines. Rubrix optimizes the experience for these core users to make your 
+    teams more productive.
+
+  - **Beyond hand-labeling**: Classical hand labeling workflows are costly and 
+    inefficient, but having humans-in-the-loop is essential. Easily combine 
+    hand-labeling with active learning, bulk-labeling, zero-shot models, and 
+    weak-supervision in novel data annotation workflows.
+
+PyPI: [https://pypi.org/project/rubrix](https://pypi.org/project/rubrix)
+
+
+About rubrix
+------------
+
+Home: https://recogn.ai
+
+Package license: Apache-2.0
+
+Summary: Open-source tool for exploring, labeling, and monitoring data for NLP projects.
+
+Development: https://github.com/recognai/rubrix
+
+Documentation: https://rubrix.readthedocs.io/en/stable/
+
+Rubrix is a **production-ready Python framework for exploring, annotating, and
+managing data** in NLP projects.
+
+Key features:
+
+  - **Open**: Rubrix is free, open-source, and 100% compatible with major NLP
+    libraries (Hugging Face transformers, spaCy, Stanford Stanza, Flair, etc.).
+    In fact, you can use and combine your preferred libraries without implementing
+    any specific interface.
+
+  - **End-to-end**: Most annotation tools treat data collection as a one-off
+    activity at the beginning of each project. In real-world projects, data
+    collection is a key activity of the iterative process of ML model development.
+    Once a model goes into production, you want to monitor and analyze its
+    predictions, and collect more data to improve your model over time. Rubrix
+    is designed to close this gap, enabling you to iterate as much as you need.
+
+  - **User and Developer Experience**: The key to sustainable NLP solutions is to
+    make it easier for everyone to contribute to projects. Domain experts should
+    feel comfortable interpreting and annotating data. Data scientists should feel
+    free to experiment and iterate. Engineers should feel in control of data
+    pipelines. Rubrix optimizes the experience for these core users to make your
+    teams more productive.
+
+  - **Beyond hand-labeling**: Classical hand labeling workflows are costly and
+    inefficient, but having humans-in-the-loop is essential. Easily combine
+    hand-labeling with active learning, bulk-labeling, zero-shot models, and
+    weak-supervision in novel data annotation workflows.
+
+PyPI: [https://pypi.org/project/rubrix](https://pypi.org/project/rubrix)
+
+
+About rubrix-server
+-------------------
+
+Home: https://recogn.ai
+
+Package license: Apache-2.0
 
 Summary: Open-source tool for exploring, labeling, and monitoring data for NLP projects.
 
@@ -132,7 +226,7 @@ available continuous integration services. Thanks to the awesome service provide
 [CircleCI](https://circleci.com/), [AppVeyor](https://www.appveyor.com/),
 [Drone](https://cloud.drone.io/welcome), and [TravisCI](https://travis-ci.com/)
 it is possible to build and upload installable packages to the
-[conda-forge](https://anaconda.org/conda-forge) [Anaconda-Cloud](https://anaconda.org/)
+[conda-forge](https://anaconda.org/conda-forge) [anaconda.org](https://anaconda.org/)
 channel for Linux, Windows and OSX respectively.
 
 To manage the continuous integration and simplify feedstock maintenance
